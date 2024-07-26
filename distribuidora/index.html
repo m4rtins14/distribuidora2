@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitura de Código de Barras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Leitor de Código de Barras</h1>
+    </header>
+    <main>
+        <section id="scanner">
+            <button onclick="startScanner()">Iniciar Câmera</button>
+            <button onclick="stopScanner()">Parar Câmera</button>
+            <div id="videoContainer">
+                <video id="video" width="100%" height="auto" autoplay></video>
+            </div>
+            <div id="capturedImage">
+                <h3>Imagem Capturada</h3>
+                <canvas id="canvas" width="100%" height="auto"></canvas>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="list.html">Lista de Compras</a>
+        <a href="add-product.html">Cadastrar Produto</a>
+        <a href="product-lot.html">Mostrar Lote</a>
+    </footer>
+    <script src="https://unpkg.com/quagga/dist/quagga.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
